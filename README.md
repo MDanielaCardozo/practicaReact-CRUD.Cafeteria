@@ -12,4 +12,4 @@ Realizamos un proyecto de varias paginas para realizar todas las operaciones de 
 
 ## Para ejecutar la simulacion de una API 
 
-`json-server --watch db.json --port 3006`
+`json-server --watch db.json --port 3005`
