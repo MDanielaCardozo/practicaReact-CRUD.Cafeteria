@@ -1,25 +1,32 @@
 {
-    "productos":[
-        {
-            "nombreProducto":"café",
-            "precio":"350",
-            "imagen":"https://...",
-            "categoria":"bebida-caliente",
-            "id":1
-        },
-        {
-            "nombreProducto":"Licuado",
-            "precio":"700",
-            "imagen":"https://...",
-            "categoria":"bebida-fria",
-            "id":2
-        },
-        {
-            "nombreProducto":"Medialuna",
-            "precio":"100",
-            "imagen":"https://...",
-            "categoria":"dulce",
-            "id":3
-        }
-    ]
+  "productos": [
+    {
+      "nombreProducto": "café",
+      "precio": "350",
+      "imagen": "https://...",
+      "categoria": "bebida-caliente",
+      "id": 1
+    },
+    {
+      "nombreProducto": "Licuado",
+      "precio": "700",
+      "imagen": "https://...",
+      "categoria": "bebida-fria",
+      "id": 2
+    },
+    {
+      "nombreProducto": "Medialuna",
+      "precio": "100",
+      "imagen": "https://...",
+      "categoria": "dulce",
+      "id": 3
+    },
+    {
+      "nombreProducto": "brownie",
+      "precio": "400",
+      "imagen": "https://...",
+      "categoria": "dulce",
+      "id": 4
+    }
+  ]
 }

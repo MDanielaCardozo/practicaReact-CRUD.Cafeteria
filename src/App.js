@@ -7,6 +7,7 @@ import EditarProducto from './components/views/producto/EditarProducto';
 import Error404 from './components/views/Error404';
 import Home from './components/views/Home';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import './components/views/Home.css'
 
 function App() {
   return (

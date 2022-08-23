@@ -12,7 +12,7 @@ const ItemProducto = ({producto}) => {
         <td>{id}</td>
         <td>{nombreProducto}</td>
         <td>{precio}</td>
-        <td>{imagen}</td>
+        <td className="truncate">{imagen}</td>
         <td>{categoria}</td>
         <td>
           <Button variant="warning">Editar</Button>
