@@ -8,25 +8,11 @@
       "id": 1
     },
     {
-      "nombreProducto": "Licuado",
-      "precio": "700",
-      "imagen": "https://...",
+      "nombreProducto": "licuado de frutilla",
+      "precio": "250",
+      "imagen": "https://image.pexels.com",
       "categoria": "bebida-fria",
-      "id": 2
-    },
-    {
-      "nombreProducto": "Medialuna",
-      "precio": "100",
-      "imagen": "https://...",
-      "categoria": "dulce",
-      "id": 3
-    },
-    {
-      "nombreProducto": "brownie",
-      "precio": "400",
-      "imagen": "https://...",
-      "categoria": "dulce",
-      "id": 4
+      "id": 5
     }
   ]
 }
