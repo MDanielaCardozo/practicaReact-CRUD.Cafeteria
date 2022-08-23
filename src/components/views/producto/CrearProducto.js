@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Form, Button, Alert } from "react-bootstrap";
 import Swal from "sweetalert2";
 import { cantidadCaracteres, validarPrecio } from "./helpers";
+import { useNavigate } from "react-router-dom";
 
 const CrearProducto = () => {
   // crear states
@@ -12,6 +13,8 @@ const CrearProducto = () => {
   const [msjError, setMsjError] = useState(false);
 
   const URL = process.env.REACT_APP_API_CAFETERIA;
+
+  const navegacion = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -42,8 +45,11 @@ const CrearProducto = () => {
       if(respuesta.status === 201){
         Swal.fire(
           'Producto creado',
-          'El producto fue agregado correctamente'
-        )
+          'El producto fue agregado correctamente',
+          'Succes'
+        );
+        //redireccionar
+        navegacion('/administrar');
       }
 
       console.log(respuesta)
