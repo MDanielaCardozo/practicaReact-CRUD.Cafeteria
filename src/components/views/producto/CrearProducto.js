@@ -76,7 +76,7 @@ const CrearProducto = () => {
             onChange={(e) => setNombreProducto(e.target.value)}
           />
         </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicE">
+        <Form.Group className="mb-3" controlId="formPrecio">
           <Form.Label>Precio*</Form.Label>
           <Form.Control
             type="number"
@@ -84,17 +84,17 @@ const CrearProducto = () => {
             onChange={(e) => setPrecio(e.target.value)}
           />
         </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicE">
-          <Form.Label>Imagen URL</Form.Label>
+        <Form.Group className="mb-3" controlId="formImagen">
+          <Form.Label>Imagen URL*</Form.Label>
           <Form.Control
             type="text"
-            placeholder="Enter email"
+            placeholder="Ej: https://www.pexels.com/es-es/foto/vans-en-blanco-y-negro-fuera-de-la-decoracion-para-colgar-en-la-pared-1230679/"
             onChange={(e) => setImagen(e.target.value)}
           />
         </Form.Group>
         <Form.Group className="mb-3">
-          <Form.Label htmlFor="">Categorías</Form.Label>
-          <Form.Select onChange={e => setCategoria(e.target.value)}>
+          <Form.Label>Categorías*</Form.Label>
+          <Form.Select onChange={(e) => setCategoria(e.target.value)}>
             <option value=''>Seleccione una opcion</option>
             <option value='bebida-caliente'>Bebida caliente</option>
             <option value='bebida-fria'>Bebida fria</option>

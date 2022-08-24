@@ -34,9 +34,8 @@ const AdministrarProductos = () => {
       <div className="d-flex justify-content-between align-items-center mt-5">
         <h1 className="display-4">Productos disponibles</h1>
         <Link to='/administrar/producto/crear' className="btn btn-primary">Agregar</Link>
-        <hr />
       </div>
-
+      <hr />
       <Table responsive striped bordered hover>
         <thead>
           <tr>
@@ -53,7 +52,6 @@ const AdministrarProductos = () => {
           {
             productos.map((producto)=><ItemProducto key={producto.id} producto={producto}></ItemProducto>)
           }
-          
         </tbody>
       </Table>
     </section>
