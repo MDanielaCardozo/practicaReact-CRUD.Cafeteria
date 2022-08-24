@@ -11,9 +11,9 @@ const CrearProducto = () => {
   const [imagen, setImagen] = useState("");
   const [categoria, setCategoria] = useState("");
   const [msjError, setMsjError] = useState(false);
-
+  //variable de entorno con la direccion de mi api
   const URL = process.env.REACT_APP_API_CAFETERIA;
-
+  //inicializar el useNavigate
   const navegacion = useNavigate();
 
   const handleSubmit = async (e) => {
@@ -22,7 +22,6 @@ const CrearProducto = () => {
     // validar los datos
     if(cantidadCaracteres(nombreProducto) && validarPrecio(precio)){
       setMsjError(false);
-
     // crear objeto
     const nuevoProducto = {
       nombreProducto,
@@ -43,12 +42,13 @@ const CrearProducto = () => {
       })
 
       if(respuesta.status === 201){
+        //mostrar mensaje que todo salio bien
         Swal.fire(
           'Producto creado',
           'El producto fue agregado correctamente',
-          'Succes'
+          'succes'
         );
-        //redireccionar
+        //redireccionar a la pagina administrar
         navegacion('/administrar');
       }
 
@@ -56,31 +56,31 @@ const CrearProducto = () => {
 
     }catch(error){
       console.log(error)
+      //mostrar un mensaje al usuario
     }
   }else{
     setMsjError(true);
   }
 };
   
-
   return (
     <section className="container">
       <h1 className="display-4 mt-5">Nuevo producto</h1>
       <hr />
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="formNombreProducto">
-          <Form.Label>Nombre del producto</Form.Label>
+          <Form.Label>Nombre del producto*</Form.Label>
           <Form.Control
             type="text"
-            placeholder="Ingrese producto"
+            placeholder="Ej: Café"
             onChange={(e) => setNombreProducto(e.target.value)}
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicE">
-          <Form.Label>Precio</Form.Label>
+          <Form.Label>Precio*</Form.Label>
           <Form.Control
             type="number"
-            placeholder="Enter email"
+            placeholder="Ej: 50"
             onChange={(e) => setPrecio(e.target.value)}
           />
         </Form.Group>
