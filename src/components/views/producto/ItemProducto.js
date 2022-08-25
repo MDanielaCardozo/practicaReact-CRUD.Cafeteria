@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import Swal from "sweetalert2";
+import { Link } from "react-router-dom";
 
 const ItemProducto = ({producto, consultarAPI}) => {
 
@@ -51,7 +52,7 @@ const ItemProducto = ({producto, consultarAPI}) => {
         <td className="truncate">{imagen}</td>
         <td>{categoria}</td>
         <td>
-          <Button variant="warning" className="me-2">Editar</Button>
+          <Link to={`/administrar/producto/editar/${id}`} className='btn btn-warning me-2'>Editar</Link>
           <Button variant="danger" onClick={handleDelete}>Borrar</Button>
         </td>
       </tr>
