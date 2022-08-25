@@ -13,6 +13,27 @@
       "imagen": "https://image.pexels.com",
       "categoria": "bebida-fria",
       "id": 5
+    },
+    {
+      "nombreProducto": "Té",
+      "precio": "200",
+      "imagen": "https://images.pexels.com/photos/5946748/pexels-photo-5946748.jpeg?cs=srgb&dl=pexels-charlotte-may-5946748.jpg&fm=jpg",
+      "categoria": "bebida-caliente",
+      "id": 6
+    },
+    {
+      "nombreProducto": "Medialunas",
+      "precio": "50",
+      "imagen": "https://images.pexels.com/photos/3892469/pexels-photo-3892469.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "categoria": "dulce",
+      "id": 7
+    },
+    {
+      "nombreProducto": "Capuccino",
+      "precio": "350",
+      "imagen": "https://images.pexels.com/photos/6717547/pexels-photo-6717547.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "categoria": "bebida-caliente",
+      "id": 8
     }
   ]
 }

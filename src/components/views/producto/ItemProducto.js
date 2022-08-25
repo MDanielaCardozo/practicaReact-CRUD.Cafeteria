@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "react-bootstrap";
 import Swal from "sweetalert2";
 
-const ItemProducto = ({producto}) => {
+const ItemProducto = ({producto, consultarAPI}) => {
 
     console.log(producto);
     const{nombreProducto, id, categoria, imagen, precio} = {...producto}
@@ -33,13 +33,12 @@ const ItemProducto = ({producto}) => {
                 'success'
               )
               //recargar la  tabla de productos
+              consultarAPI();
             }
     
           }catch(error){
             console.log(error)
           }
-
-          
         }
       })
     }
@@ -52,7 +51,7 @@ const ItemProducto = ({producto}) => {
         <td className="truncate">{imagen}</td>
         <td>{categoria}</td>
         <td>
-          <Button variant="warning">Editar</Button>
+          <Button variant="warning" className="me-2">Editar</Button>
           <Button variant="danger" onClick={handleDelete}>Borrar</Button>
         </td>
       </tr>
