@@ -9,8 +9,8 @@
     },
     {
       "nombreProducto": "licuado de frutilla",
-      "precio": "250",
       "imagen": "https://image.pexels.com",
+      "precio": "300",
       "categoria": "bebida-fria",
       "id": 5
     },
@@ -30,8 +30,8 @@
     },
     {
       "nombreProducto": "Capuccino",
-      "precio": "350",
       "imagen": "https://images.pexels.com/photos/6717547/pexels-photo-6717547.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "precio": "355",
       "categoria": "bebida-caliente",
       "id": 8
     }
