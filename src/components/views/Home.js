@@ -22,17 +22,16 @@ const Home = () => {
     }
   }
   
-
   return (
     <div className="container">
       <h1 className="display-4 m-4">Pagina principal</h1>
       <hr />
-      <Row xs={1} md={4} className="d-flex">
-        <Col>
+      <Row xs={1} md={4} className="g-4">
+        
         {
-          productos.map((producto)=><CardProducto key={producto.id} producto={producto}></CardProducto>)
+          productos.map((producto)=><Col><CardProducto key={producto.id} producto={producto}></CardProducto></Col>)
         }
-        </Col>
+        
       </Row>
     </div>
   );

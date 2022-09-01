@@ -27,15 +27,15 @@ const DetalleProducto = () => {
     }
     
     return (
-        <Card>
-            <Row>
+        <Card className='container my-5'>
+            <Row className='w-75'>
                 <Col md={6}>
-                    <img src={producto.imagen} alt={producto.nombreProducto} className="w-100"/>
+                    <img src={producto.imagen} alt={producto.nombreProducto} className="w-100" />
                 </Col>
                 <Col md={6} className="py-3">
                 <h3>{producto.nombreProducto}</h3>
                 <hr/>
-                <Badge bg="succes">{producto.categoria}</Badge>
+                <Badge bg="success">{producto.categoria}</Badge>
                 <p className='mt-3'><b>Descripcion:</b></p>
                 </Col>
             </Row>

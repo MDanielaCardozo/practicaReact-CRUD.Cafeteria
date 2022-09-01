@@ -1,14 +1,14 @@
 {
   "productos": [
     {
-      "nombreProducto": "café",
+      "nombreProducto": "Café",
       "imagen": "https://images.pexels.com/photos/13395849/pexels-photo-13395849.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "precio": "350",
       "categoria": "bebida-caliente",
       "id": 1
     },
     {
-      "nombreProducto": "licuado de frutilla",
+      "nombreProducto": "Licuado de frutilla",
       "imagen": "https://images.pexels.com/photos/2424832/pexels-photo-2424832.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "precio": "300",
       "categoria": "bebida-fria",
@@ -34,6 +34,55 @@
       "precio": "355",
       "categoria": "bebida-caliente",
       "id": 8
+    },
+    {
+      "nombreProducto": "Muffin",
+      "precio": "150",
+      "imagen": "https://images.pexels.com/photos/1657343/pexels-photo-1657343.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "categoria": "dulce",
+      "id": 9
+    },
+    {
+      "nombreProducto": "Muffin de chocolate",
+      "precio": "200",
+      "imagen": "https://images.pexels.com/photos/1026123/pexels-photo-1026123.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "categoria": "dulce",
+      "id": 10
+    },
+    {
+      "nombreProducto": "Cookies",
+      "precio": "150",
+      "imagen": "https://images.pexels.com/photos/298217/pexels-photo-298217.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "categoria": "dulce",
+      "id": 11
+    },
+    {
+      "nombreProducto": "Apple pie",
+      "precio": "350",
+      "imagen": "https://images.pexels.com/photos/221059/pexels-photo-221059.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "categoria": "dulce",
+      "id": 12
+    },
+    {
+      "nombreProducto": "Muffin pink",
+      "precio": "200",
+      "imagen": "https://images.pexels.com/photos/853004/pexels-photo-853004.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "categoria": "dulce",
+      "id": 13
+    },
+    {
+      "nombreProducto": "Muffin de arandanos",
+      "precio": "200",
+      "imagen": "https://images.pexels.com/photos/556829/pexels-photo-556829.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "categoria": "dulce",
+      "id": 14
+    },
+    {
+      "nombreProducto": "Mini cake",
+      "precio": "450",
+      "imagen": "https://images.pexels.com/photos/3892468/pexels-photo-3892468.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "categoria": "dulce",
+      "id": 15
     }
   ]
 }
