@@ -29,7 +29,7 @@ const Home = () => {
       <Row xs={1} md={4} className="g-4">
         
         {
-          productos.map((producto)=><Col><CardProducto key={producto.id} producto={producto}></CardProducto></Col>)
+          productos.map((producto)=><Col key={producto.id}><CardProducto producto={producto}></CardProducto></Col>)
         }
         
       </Row>
