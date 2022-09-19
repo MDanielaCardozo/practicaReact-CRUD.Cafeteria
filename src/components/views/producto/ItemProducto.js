@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const ItemProducto = ({producto, consultarAPI}) => {
 
     console.log(producto);
-    const{nombreProducto, id, categoria, imagen, precio} = {...producto}
+    const{nombreProducto, _id, categoria, imagen, precio} = {...producto}
     const URL = process.env.REACT_APP_API_CAFETERIA;
 
     const handleDelete = () => {
@@ -26,7 +26,7 @@ const ItemProducto = ({producto, consultarAPI}) => {
             const parametros = {
               method: "DELETE"
             }
-            const respuesta = await fetch(URL+'/'+id,parametros);
+            const respuesta = await fetch(URL+'/'+_id,parametros);
             if(respuesta.status === 200){
               Swal.fire(
                 'Producto eliminado!',
@@ -46,13 +46,13 @@ const ItemProducto = ({producto, consultarAPI}) => {
 
   return (
       <tr>
-        <td>{id}</td>
+        <td>{_id}</td>
         <td>{nombreProducto}</td>
         <td>{precio}</td>
         <td className="truncate">{imagen}</td>
         <td>{categoria}</td>
         <td>
-          <Link to={`/administrar/producto/editar/${id}`} className='btn btn-warning me-2'>Editar</Link>
+          <Link to={`/administrar/producto/editar/${_id}`} className='btn btn-warning me-2'>Editar</Link>
           <Button variant="danger" onClick={handleDelete}>Borrar</Button>
         </td>
       </tr>

@@ -36,7 +36,7 @@ const DetalleProducto = () => {
                 <h3>{producto.nombreProducto}</h3>
                 <hr/>
                 <Badge bg="success">{producto.categoria}</Badge>
-                <p className='mt-3'><b>Descripcion:</b></p>
+                <p className='mt-3'><b>Precio: ${producto.precio}</b></p>
                 </Col>
             </Row>
         </Card>
