@@ -13,6 +13,7 @@ const Menu = () => {
               <NavLink to='/'className='nav-item nav-link'>Inicio</NavLink>
               <NavLink end to='/administrar'className='nav-item nav-link'>Administrar</NavLink>
               <NavLink end to='/administrar/producto/crear'className='nav-item nav-link'>Crear</NavLink>
+              <NavLink end to='/login'className='nav-item nav-link'>Login</NavLink>
             </Nav>
           </Navbar.Collapse>
         </Container>

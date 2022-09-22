@@ -9,6 +9,7 @@ import Home from './components/views/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './components/views/Home.css'
 import DetalleProducto from './components/views/DetalleProducto';
+import LoginUsuario from './components/views/LoginUsuario';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Menu></Menu>
         <Routes>
           <Route exact path='/' element={<Home></Home>}></Route>
+          <Route exact path='/login' element={<LoginUsuario></LoginUsuario>}></Route>
           <Route exact path='/administrar' element={<AdministrarProductos></AdministrarProductos>}></Route>
           <Route exact path='/administrar/producto/crear' element={<CrearProducto></CrearProducto>}></Route>
           <Route exact path='/administrar/producto/editar/:id' element={<EditarProducto></EditarProducto>}></Route>
