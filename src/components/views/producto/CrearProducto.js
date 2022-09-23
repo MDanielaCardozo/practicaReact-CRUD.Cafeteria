@@ -36,7 +36,8 @@ const CrearProducto = () => {
       const respuesta = await fetch(URL,{
         method: 'POST',
         headers: {
-          "Content-Type":"application/json"
+          "Content-Type":"application/json",
+          "x-token": JSON.parse(localStorage.getItem('tokenCafe')).token 
         },
         body: JSON.stringify(nuevoProducto)
       })
